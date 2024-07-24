@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partnerpulse</title>
+  <link rel="icon" href="./images/brand/favicon.svg" />
+  <!-- phosphor icons -->
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/regular/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/thin/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/light/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/bold/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/fill/style.css">
+  <link rel="stylesheet" type="text/css" href="./plugins/phosphor-icons-2.1.0/duotone/style.css">
+  <!-- styling css -->
+  <link rel="stylesheet" href="./plugins/bootstrap-5.3.3/bootstrap.min.css" />
+  <link rel="stylesheet" href="./plugins/swiper-11.1.4/swiper.min.css" />
+  <link rel="stylesheet" href="./plugins/aos-2.0.0/aos.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!--============================
+  =            Header            =
+  =============================-->
+  <header>
+    <nav class="navbar py-2 d-block navbar-expand-lg">
+      <div class="container-xl justify-content-start gap-1 gap-md-3">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/brand/logo.svg" alt="Logo">
+        </a>
+        <div class="search input-group d-flex d-lg-none ms-auto">
+          <button class="input-group-text">
+            <i class="ph ph-magnifying-glass"></i>
+          </button>
+          <input type="text" class="form-control" placeholder="Search Burger...">
+        </div>
+        <div class="top-buttons">
+          <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+            <i class="ph-bold ph-list"></i>
+          </button>
+          <a href="#" class="btn cart_btn btn-outline d-flex d-lg-none">
+            <div class="badge">2</div>
+            <i class="ph-duotone ph-shopping-cart-simple"></i>
+          </a>
+        </div>
+        <div class="menu_offcanvas" id="menu">
+          <div class="offcanvas-header d-lg-none">
+            <a href="index.html" class="navbar-brand">
+              <img src="images/brand/logo.svg" alt="Logo">
+            </a>
+          </div>
+          <div class="navbar-collapse gap-3 offcanvas-body">
+            <ul class="navbar-nav w-100 me-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#offers">Offers</a>
+              </li>
+            </ul>
+            <div class="search input-group d-none d-lg-flex">
+              <button class="input-group-text">
+                <i class="ph ph-magnifying-glass"></i>
+              </button>
+              <input type="text" class="form-control" placeholder="Search Burger...">
+            </div>
+            <div class="languages dropdown d-none d-lg-block">
+              <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                <figure>
+                  <img src="images/flags/united-states.svg" alt="Bangladesh Flag">
+                </figure>
+                <span>English</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <figure>
+                      <img src="images/flags/united-states.svg" alt="United States Flag">
+                    </figure>
+                    <span>English</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <figure>
+                      <img src="images/flags/bangladesh.svg" alt="Bangladesh Flag">
+                    </figure>
+                    <span>Bengali</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <figure>
+                      <img src="images/flags/germany.svg" alt="Germany Flag">
+                    </figure>
+                    <span>German</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <figure>
+                      <img src="images/flags/saudi-arabia.svg" alt="Saudi Arabia Flag">
+                    </figure>
+                    <span>Arabic</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header_action_btns">
+              <a href="#" class="btn cart_btn btn-outline d-none d-lg-flex">
+                <div class="badge">2</div>
+                <i class="ph-duotone ph-shopping-cart-simple"></i>
+              </a>
+              <!-- <a href="#" class="btn"><span>Login</span></a> -->
+              <!-- ⚠ IF LOGIN -->
+              <a href="#" class="btn d-flex d-lg-none"><span>Account</span></a>
+              <div class="acount dropdown d-none d-lg-block">
+                <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                  <span>Account</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a href="#" class="profile">
+                      <figure class="profile_img">
+                        <img src="images/profiles/profile.webp" alt="">
+                      </figure>
+                      <hgroup>
+                        <h4>Hayyan Shaikh</h4>
+                        <p>hayyan@gmail.com</p>
+                      </hgroup>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="ph ph-tote-simple"></i>
+                      <span>My Orders</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="ph ph-user-circle"></i>
+                      <span>Edit Profile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="ph ph-chat-teardrop-text"></i>
+                      <span>Chat</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="ph ph-map-pin-area"></i>
+                      <span>Address</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="ph ph-key"></i>
+                      <span>Change Password</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="ph ph-sign-out"></i>
+                      <span>Logout</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--====  End of Header  ====-->
+  <!--==========================
+  =            Main            =
+  ===========================-->
+  <main></main>
+  <!--====  End of Main  ====-->
+  <!--============================
+  =            Footer            =
+  =============================-->
+  <!--====  End of Footer  ====-->
+  <!-- js files -->
+  <script type="text/javascript" src="./plugins/jquery-3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./plugins/swiper-11.1.4/swiper.min.js"></script>
+  <script type="text/javascript" src="./plugins/bootstrap-5.3.3/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
