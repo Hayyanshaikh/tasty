@@ -636,6 +636,11 @@ header {
   flex: 0 0 auto;
 }
 
+.navbar-brand img{
+  width: 100%;
+  height: 100%;
+}
+
 .navbar-toggler {
   border: none;
 }
@@ -656,8 +661,8 @@ header {
   justify-content: space-between;
 }
 
-.nav-link:hover {
-  color: var(--primary);
+.nav-link:where(:hover, .active) {
+  color: var(--primary) !important;
 }
 
 .search {
