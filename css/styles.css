@@ -37,55 +37,55 @@
 /* Poppins Fonts */
 
 @font-face {
-  font-family: 'Poppins-Thin';
+  font-family: 'Poppins';
   font-weight: 100;
   src: url('../fonts/Poppins/Poppins-Thin.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins-ExtraLight';
+  font-family: 'Poppins';
   font-weight: 200;
   src: url('../fonts/Poppins/Poppins-ExtraLight.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins-Light';
+  font-family: 'Poppins';
   font-weight: 300;
   src: url('../fonts/Poppins/Poppins-Light.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins-Regular';
+  font-family: 'Poppins';
   font-weight: 400;
   src: url('../fonts/Poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins-Medium';
+  font-family: 'Poppins';
   font-weight: 500;
   src: url('../fonts/Poppins/Poppins-Medium.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins-SemiBold';
+  font-family: 'Poppins';
   font-weight: 600;
   src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins-Bold';
+  font-family: 'Poppins';
   font-weight: 700;
   src: url('../fonts/Poppins/Poppins-Bold.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins-ExtraBold';
+  font-family: 'Poppins';
   font-weight: 800;
   src: url('../fonts/Poppins/Poppins-ExtraBold.ttf');
 }
 
 @font-face {
-  font-family: 'Poppins-Black';
+  font-family: 'Poppins';
   font-weight: 900;
   src: url('../fonts/Poppins/Poppins-Black.ttf');
 }
@@ -98,8 +98,8 @@
 }
 
 :root {
-  --roboto-font: "Roboto";
-  --poppins-font: "Poppins";
+  --roboto-font: "Roboto", sans-serif;
+  --poppins-font: "Poppins", sans-serif;
   --phosphor-thin-font: "Phosphor-Thin" !important;
   --phosphor-light-font: "Phosphor-Light" !important;
   --phosphor-normal-font: "Phosphor" !important;
@@ -211,8 +211,24 @@ a {
 
 section {
   overflow: hidden;
-  padding-block: 80px;
+  padding-block: 50px;
 }
+
+img {
+  position: relative;
+}
+
+img:before {
+  inset: 0;
+  content: "";
+  position: absolute;
+  background-size: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--bs-gray-100);
+  background-image: url("../images/brand/favicon-gray.svg");
+}
+
 
 .webkit_box {
   display: -webkit-box;
@@ -591,6 +607,7 @@ section {
 
 .card-text {
   color: var(--bs-gray-600);
+  margin-bottom: 1rem;
 }
 
 .card-body {
@@ -785,7 +802,6 @@ header {
 .hero {
   overflow: hidden;
   position: relative;
-  max-height: calc(100dvh - 74.56px);
 }
 
 .hero:before,
@@ -858,6 +874,103 @@ header {
   50% {
     translate: 0 0;
   }
+}
+
+/* menu */
+.swiper-slide:has(.menu_item){
+  max-width: 150px;
+  height: unset;
+}
+.menu_item {
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  grid-gap: 10px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.2s ease;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid var(--bs-gray-200);
+}
+
+.menu_item:hover {
+  border-color: var(--primary);
+  background-color: var(--primary-light);
+}
+
+.menu_img {
+  height: 70px;
+  width: 70px;
+  margin-inline: auto;
+  filter: drop-shadow(2px 4px 10px var(--bs-gray-300));
+}
+
+.menu_title {
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+/* featured products */
+.rating {
+  display: flex;
+  grid-gap: 5px;
+  align-items: center;
+}
+
+.rating a {
+  line-height: 0;
+  color: var(--bs-gray-200);
+  font-size: clamp(18px, 2vw, 20px);
+}
+
+.rating a.active {
+  color: gold;
+}
+
+.product_card {
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+  border: 1px solid var(--bs-gray-200);
+}
+
+.product_card:hover{
+  translate: 0 -5px;
+  border-color: var(--primary);
+}
+
+.product_card figure {
+  height: 180px;
+  border-radius: 5px;
+  margin-bottom: 14px;
+  background-color: var(--bs-gray-100);
+}
+
+.product_card figure img{
+  filter: drop-shadow(2px 4px 5px var(--bs-gray-400));
+}
+
+.product_card .card-title {
+  font-weight: var(--weight-semibold);
+  font-size: clamp(16px, 2vw, 18px);
+}
+
+.product_card .card-body {
+  text-align: center;
+}
+
+.product_card .card-text {
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+}
+
+.price {
+  color: var(--primary-hover);
+  font-family: var(--poppins-font);
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: var(--weight-semibold);
 }
 
 /* responsive */

@@ -2,7 +2,7 @@ $(function() {
   $(window).resize(function() {
     convertToOffcanvas();
   }).trigger('resize');
-  
+
   var forms = $('.needs-validation');
   forms.each(function() {
     $(this).on('submit', function(event) {
@@ -15,19 +15,32 @@ $(function() {
   });
 
   var heroSlider = new Swiper('.hero_slider', {
-      slidesPerView: 1,
-      speed: 1000,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+    loop: true,
+    speed: 1500,
+    autoplay: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  var menuSlider = new Swiper('.menu_slider', {
+    loop: true,
+    speed: 500,
+    autoplay: true,
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 });
 
 const convertToOffcanvas = () => {
