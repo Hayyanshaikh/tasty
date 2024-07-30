@@ -17,7 +17,6 @@ $(function() {
   var heroSlider = new Swiper('.hero_slider', {
     loop: true,
     speed: 1500,
-    autoplay: true,
     slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
@@ -30,10 +29,9 @@ $(function() {
     },
   });
 
-  var menuSlider = new Swiper('.menu_slider', {
+  var categoriesSlider = new Swiper('.categories_slider', {
     loop: true,
     speed: 500,
-    autoplay: true,
     slidesPerView: "auto",
     spaceBetween: 20,
     navigation: {

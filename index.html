@@ -20,38 +20,23 @@
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
-<body>
+<body class="home-page">
   <!--============================
   =            Header            =
   =============================-->
   <header>
     <nav class="navbar py-2 d-block navbar-expand-lg">
-      <div class="container-xl justify-content-start gap-1 gap-md-3">
+      <div class="container-xl justify-content-start gap-3 gap-sm-4">
         <a class="navbar-brand" href="index.html">
-          <img src="images/brand/logo.svg" alt="Logo">
+          <img src="images/brand/logo-dark.svg" alt="Logo">
         </a>
-        <div class="search input-group d-flex d-lg-none ms-auto">
-          <button class="input-group-text">
-            <i class="ph ph-magnifying-glass"></i>
-          </button>
-          <input type="text" class="form-control" placeholder="Search Burger...">
-        </div>
-        <div class="top-buttons">
-          <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
-            <i class="ph-bold ph-list"></i>
-          </button>
-          <a href="#" class="btn cart_btn btn-outline d-flex d-lg-none">
-            <div class="badge">2</div>
-            <i class="ph-duotone ph-shopping-cart-simple"></i>
-          </a>
-        </div>
         <div class="menu_offcanvas" id="menu">
           <div class="offcanvas-header d-lg-none">
             <a href="index.html" class="navbar-brand">
               <img src="images/brand/logo.svg" alt="Logo">
             </a>
           </div>
-          <div class="navbar-collapse gap-3 offcanvas-body">
+          <div class="navbar-collapse gap-4 offcanvas-body">
             <ul class="navbar-nav w-100 me-lg-auto">
               <li class="nav-item">
                 <a class="nav-link active" href="#home">Home</a>
@@ -63,119 +48,126 @@
                 <a class="nav-link" href="#offers">Offers</a>
               </li>
             </ul>
-            <div class="search input-group d-none d-lg-flex">
-              <button class="input-group-text">
-                <i class="ph ph-magnifying-glass"></i>
-              </button>
-              <input type="text" class="form-control" placeholder="Search Burger...">
-            </div>
-            <div class="languages dropdown d-none d-lg-block">
-              <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                <figure>
-                  <img src="images/flags/united-states.svg" alt="Bangladesh Flag">
-                </figure>
-                <span>English</span>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <figure>
-                      <img src="images/flags/united-states.svg" alt="United States Flag">
-                    </figure>
-                    <span>English</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <figure>
-                      <img src="images/flags/bangladesh.svg" alt="Bangladesh Flag">
-                    </figure>
-                    <span>Bengali</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <figure>
-                      <img src="images/flags/germany.svg" alt="Germany Flag">
-                    </figure>
-                    <span>German</span>
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <figure>
-                      <img src="images/flags/saudi-arabia.svg" alt="Saudi Arabia Flag">
-                    </figure>
-                    <span>Arabic</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="header_action_btns">
-              <a href="#" class="btn cart_btn btn-outline d-none d-lg-flex">
-                <div class="badge">2</div>
-                <i class="ph-duotone ph-shopping-cart-simple"></i>
-              </a>
-              <a href="#" class="btn"><span>Login</span></a>
-              <!-- ⚠⚠⚠⚠ IF LOGIN ⚠⚠⚠⚠-->
-              <!-- <a href="#" class="btn d-flex d-lg-none"><span>Account</span></a>
-              <div class="acount dropdown d-none d-lg-block">
-                <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
-                  <span>Account</span>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <a href="#" class="profile">
-                      <figure class="profile_img">
-                        <img src="images/profiles/profile.webp" alt="">
-                      </figure>
-                      <hgroup>
-                        <h4>Hayyan Shaikh</h4>
-                        <p>hayyan@gmail.com</p>
-                      </hgroup>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <i class="ph ph-tote-simple"></i>
-                      <span>My Orders</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <i class="ph ph-user-circle"></i>
-                      <span>Edit Profile</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <i class="ph ph-chat-teardrop-text"></i>
-                      <span>Chat</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <i class="ph ph-map-pin-area"></i>
-                      <span>Address</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <i class="ph ph-key"></i>
-                      <span>Change Password</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <i class="ph ph-sign-out"></i>
-                      <span>Logout</span>
-                    </a>
-                  </li>
-                </ul>
-              </div> -->
-            </div>
           </div>
         </div>
+        <div class="header_contact d-none d-lg-flex">
+          <div class="header_contact_icon">
+            <i class="ph ph-phone-call"></i>
+          </div>
+          <hgroup>
+            <h5>hotline Order</h5>
+            <span class="number">+92 401 9743575</span>
+          </hgroup>
+        </div>
+        <div class="languages dropdown ms-auto d-none d-sm-block">
+          <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            <figure>
+              <img src="images/flags/united-states.svg" alt="Bangladesh Flag">
+            </figure>
+            <span>English</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <a class="dropdown-item" href="#">
+                <figure>
+                  <img src="images/flags/united-states.svg" alt="United States Flag">
+                </figure>
+                <span>English</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <figure>
+                  <img src="images/flags/bangladesh.svg" alt="Bangladesh Flag">
+                </figure>
+                <span>Bengali</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <figure>
+                  <img src="images/flags/germany.svg" alt="Germany Flag">
+                </figure>
+                <span>German</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <figure>
+                  <img src="images/flags/saudi-arabia.svg" alt="Saudi Arabia Flag">
+                </figure>
+                <span>Arabic</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header_action_btns gap-3 ms-auto ms-sm-0 gap-sm-4">
+          <a href="#" class="header_action_btn cart_btn">
+            <i class="ph ph-shopping-cart-simple"></i>
+            <div class="badge">2</div>
+          </a>
+          <a href="#" class="header_action_btn login_btn">
+            <i class="ph ph-user"></i>
+          </a>
+          <!-- ⚠⚠⚠⚠ IF LOGIN ⚠⚠⚠⚠-->
+          <!-- <div class="acount dropdown d-none d-lg-block">
+            <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+              <span>Account</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a href="#" class="profile">
+                  <figure class="profile_img">
+                    <img src="images/profiles/profile.webp" alt="">
+                  </figure>
+                  <hgroup>
+                    <h4>Hayyan Shaikh</h4>
+                    <p>hayyan@gmail.com</p>
+                  </hgroup>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="ph ph-tote-simple"></i>
+                  <span>My Orders</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="ph ph-user-circle"></i>
+                  <span>Edit Profile</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="ph ph-chat-teardrop-text"></i>
+                  <span>Chat</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="ph ph-map-pin-area"></i>
+                  <span>Address</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="ph ph-key"></i>
+                  <span>Change Password</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <i class="ph ph-sign-out"></i>
+                  <span>Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+          <i class="ph-bold ph-list"></i>
+        </button>
       </div>
     </nav>
   </header>
@@ -187,181 +179,152 @@
     <!-- hero -->
     <section class="hero py-4">
       <div class="container-xl">
-        <div class="hero_slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="row gy-4 flex-column-reverse flex-lg-row align-items-center">
-                <div class="col-lg-6 col-12 text-center text-lg-start">
-                  <hgroup>
-                    <span class="hero_expire_date">10:00 AM - 11:00 PM</span>
-                    <h1 class="hero_heading">Enjoy your <span>Delicious</span> Food</h1>
-                    <p class="hero_pera">Get 20% off on your favorite Zinger burger. Savor the flavor and save now! Limited-time offer!</p>
-                  </hgroup>
-                  <a href="#" class="btn btn-lg">
-                    <span>Order Now</span>
-                  </a>
-                </div>
-                <div class="col-lg-5 offset-lg-1">
-                  <figure class="hero_img contain">
-                    <img src="images/banners/banner_2.webp" alt="burger">
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="row gy-4 flex-column-reverse flex-lg-row align-items-center">
-                <div class="col-lg-6 col-12 text-center text-lg-start">
-                  <hgroup>
-                    <span class="hero_expire_date">10:00 AM - 11:00 PM</span>
-                    <h1 class="hero_heading">Satisfy your <span>Cravings</span> with Pizza</h1>
-                    <p class="hero_pera">Get 15% off on our special Margherita pizza. Experience the taste of Italy with every bite!</p>
-                  </hgroup>
-                  <a href="#" class="btn btn-lg">
-                    <span>Order Now</span>
-                  </a>
-                </div>
-                <div class="col-lg-5 offset-lg-1">
-                  <figure class="hero_img contain">
-                    <img src="images/banners/banner_1.webp" alt="pizza">
-                  </figure>
-                </div>
-              </div>
-            </div>
+        <div class="row gy-4 flex-column-reverse flex-lg-row align-items-center">
+          <div class="col-lg-6 col-12 text-center text-lg-start">
+            <hgroup>
+              <span class="hero_deal">Buy 3 Get 4th FREE!</span>
+              <h1 class="hero_heading">Enjoy your <span>Delicious</span> Food</h1>
+              <p class="hero_pera">Get 20% off on your favorite Zinger burger. Savor the flavor and save now! Limited-time offer!</p>
+            </hgroup>
+            <a href="#" class="btn btn-secondary btn-lg">
+              <span>Order Now</span>
+            </a>
           </div>
-          <div class="swiper-button-prev arrows"></div>
-          <div class="swiper-button-next arrows"></div>
-          <div class="swiper-pagination d-none d-lg-flex"></div>
+          <div class="col-lg-5 offset-lg-1">
+            <figure class="hero_img contain">
+              <img src="images/banners/banner_2.webp" alt="burger">
+            </figure>
+          </div>
         </div>
       </div>
     </section>
     <!-- Our Menu -->
-    <section class="our_menu">
+    <section class="categories">
       <div class="container-xl">
         <div class="row">
           <div class="col-6 text-start">
-            <h2 class="heading">Our Menu</h2>
+            <h2 class="heading">Our categories</h2>
           </div>
           <div class="col-6 text-end">
-            <a href="#" class="btn btn-outline">
+            <a href="#" class="btn">
               <span>View all</span>
               <i class="ph-duotone ph-caret-double-right"></i>
             </a>
           </div>
         </div>
-        <div class="swiper menu_slider">
+        <div class="swiper categories_slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <a href="#" class="menu_item">
-                <figure class="menu_img contain">
-                  <img src="images/menu/appetizer.webp" alt="appetizer">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_1.webp" alt="appetizer">
                 </figure>
                 <hgroup>
-                  <h4 class="menu_title">appetizer</h4>
+                  <h4 class="categories_title">appetizer</h4>
                 </hgroup>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="menu_item">
-                <figure class="menu_img contain">
-                  <img src="images/menu/biryani.webp" alt="biryani">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_2.webp" alt="biryani">
                 </figure>
                 <hgroup>
-                  <h4 class="menu_title">biryani</h4>
+                  <h4 class="categories_title">biryani</h4>
                 </hgroup>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="menu_item">
-                <figure class="menu_img contain">
-                  <img src="images/menu/burger.webp" alt="burger">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_3.webp" alt="burger">
                 </figure>
                 <hgroup>
-                  <h4 class="menu_title">burger</h4>
+                  <h4 class="categories_title">burger</h4>
                 </hgroup>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="menu_item">
-                <figure class="menu_img contain">
-                  <img src="images/menu/christmas-dinner.webp" alt="christmas-dinner">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_4.webp" alt="christmas-dinner">
                 </figure>
                 <hgroup>
-                  <h4 class="menu_title">christmas-dinner</h4>
+                  <h4 class="categories_title">christmas-dinner</h4>
                 </hgroup>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="menu_item">
-                <figure class="menu_img contain">
-                  <img src="images/menu/lobster.webp" alt="lobster">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_5.webp" alt="lobster">
                 </figure>
                 <hgroup>
-                  <h4 class="menu_title">lobster</h4>
+                  <h4 class="categories_title">lobster</h4>
                 </hgroup>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="menu_item">
-                <figure class="menu_img contain">
-                  <img src="images/menu/salad.webp" alt="salad">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_6.webp" alt="salad">
                 </figure>
                 <hgroup>
-                  <h4 class="menu_title">salad</h4>
+                  <h4 class="categories_title">salad</h4>
                 </hgroup>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="menu_item">
-                <figure class="menu_img contain">
-                  <img src="images/menu/sandwich.webp" alt="sandwich">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_7.webp" alt="sandwich">
                 </figure>
                 <hgroup>
-                  <h4 class="menu_title">sandwich</h4>
+                  <h4 class="categories_title">sandwich</h4>
                 </hgroup>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="menu_item">
-                <figure class="menu_img contain">
-                  <img src="images/menu/soup.webp" alt="soup">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_8.webp" alt="soup">
                 </figure>
                 <hgroup>
-                  <h4 class="menu_title">soup</h4>
+                  <h4 class="categories_title">soup</h4>
                 </hgroup>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="menu_item">
-                <figure class="menu_img contain">
-                  <img src="images/menu/steak.webp" alt="steak">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_1.webp" alt="steak">
                 </figure>
                 <hgroup>
-                  <h4 class="menu_title">steak</h4>
+                  <h4 class="categories_title">steak</h4>
                 </hgroup>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="menu_item">
-                <figure class="menu_img contain">
-                  <img src="images/menu/taco.webp" alt="taco">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_2.webp" alt="taco">
                 </figure>
                 <hgroup>
-                  <h4 class="menu_title">taco</h4>
+                  <h4 class="categories_title">taco</h4>
                 </hgroup>
               </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="menu_item">
-                <figure class="menu_img contain">
-                  <img src="images/menu/veggie-burger.webp" alt="veggie-burger">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_3.webp" alt="veggie-burger">
                 </figure>
                 <hgroup>
-                  <h4 class="menu_title">veggie-burger</h4>
+                  <h4 class="categories_title">veggie-burger</h4>
                 </hgroup>
               </a>
             </div>
           </div>
-          <!-- Add Navigation -->
           <div class="swiper-button-next arrows"></div>
           <div class="swiper-button-prev arrows"></div>
         </div>
@@ -372,289 +335,188 @@
       <div class="container-xl">
         <div class="row">
           <div class="col-12">
-            <h2 class="heading">Featured Items</h2>
+            <h2 class="heading text-white">Featured Items</h2>
           </div>
         </div>
         <div class="row gy-4">
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-xl-3 col-lg-4 col-6">
             <div class="product_card card">
               <figure class="contain">
                 <img src="images/products/product_1.webp" alt="Cheeseburger">
               </figure>
               <div class="card-body">
-                <h5 class="card-title">Cheeseburger</h5>
-                <p class="card-text webkit_box">Juicy beef patty with melted cheese, fresh lettuce, and a tangy sauce.</p>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="price">$9.45</p>
-                  <div class="rating">
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                  </div>
+                <h5 class="card-title webkit_box">Delicious Cheeseburger with Melted Cheese</h5>
+                <p class="card-text webkit_box">Juicy beef patty with melted cheese, fresh lettuce, and a tangy sauce for extra flavor.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                  <p class="price">$<span>9.45</span></p>
+                  <a href="#" class="btn">
+                    <span>Add to Cart</span>
+                    <i class="ph-duotone ph-shopping-cart-simple"></i>
+                  </a>
                 </div>
-                <a href="#" class="btn">
-                  <span>Add to Cart</span>
-                  <i class="ph-duotone ph-shopping-cart-simple"></i>
-                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-xl-3 col-lg-4 col-6">
             <div class="product_card card">
               <figure class="contain">
-                <img src="images/products/product_2.webp" alt="Bacon Burger">
+                <img src="images/products/product_2.webp" alt="Pizza">
               </figure>
               <div class="card-body">
-                <h5 class="card-title">Bacon Burger</h5>
-                <p class="card-text webkit_box">Grilled beef patty topped with crispy bacon, cheddar cheese, and BBQ sauce.</p>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="price">$10.25</p>
-                  <div class="rating">
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                  </div>
+                <h5 class="card-title webkit_box">Freshly Baked Pizza with Mozzarella Cheese</h5>
+                <p class="card-text webkit_box">Freshly baked dough topped with marinara sauce, mozzarella cheese, and your choice of delicious toppings.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                  <p class="price">$<span>12.95</span></p>
+                  <a href="#" class="btn">
+                    <span>Add to Cart</span>
+                    <i class="ph-duotone ph-shopping-cart-simple"></i>
+                  </a>
                 </div>
-                <a href="#" class="btn">
-                  <span>Add to Cart</span>
-                  <i class="ph-duotone ph-shopping-cart-simple"></i>
-                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-xl-3 col-lg-4 col-6">
             <div class="product_card card">
               <figure class="contain">
-                <img src="images/products/product_3.webp" alt="Veggie Burger">
+                <img src="images/products/product_3.webp" alt="Tacos">
               </figure>
               <div class="card-body">
-                <h5 class="card-title">Veggie Burger</h5>
-                <p class="card-text webkit_box">A flavorful patty made from fresh vegetables and legumes, topped with a variety of veggies.</p>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="price">$8.75</p>
-                  <div class="rating">
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                  </div>
+                <h5 class="card-title webkit_box">Tasty Tacos with Variety of Fresh Fillings</h5>
+                <p class="card-text webkit_box">Soft or hard shell tacos filled with your choice of meat, beans, cheese, and fresh toppings for a perfect meal.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                  <p class="price">$<span>7.95</span></p>
+                  <a href="#" class="btn">
+                    <span>Add to Cart</span>
+                    <i class="ph-duotone ph-shopping-cart-simple"></i>
+                  </a>
                 </div>
-                <a href="#" class="btn">
-                  <span>Add to Cart</span>
-                  <i class="ph-duotone ph-shopping-cart-simple"></i>
-                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-xl-3 col-lg-4 col-6">
             <div class="product_card card">
               <figure class="contain">
-                <img src="images/products/product_4.webp" alt="Chicken Burger">
+                <img src="images/products/product_4.webp" alt="Salad">
               </figure>
               <div class="card-body">
-                <h5 class="card-title">Chicken Burger</h5>
-                <p class="card-text webkit_box">Tender chicken patty with crisp lettuce, tomatoes, and a special mayo sauce.</p>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="price">$9.95</p>
-                  <div class="rating">
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                  </div>
+                <h5 class="card-title webkit_box">Healthy Salad with Fresh Greens and Toppings</h5>
+                <p class="card-text webkit_box">Fresh mixed greens with your choice of toppings, including vegetables, fruits, and nuts for a healthy option.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                  <p class="price">$<span>8.95</span></p>
+                  <a href="#" class="btn">
+                    <span>Add to Cart</span>
+                    <i class="ph-duotone ph-shopping-cart-simple"></i>
+                  </a>
                 </div>
-                <a href="#" class="btn">
-                  <span>Add to Cart</span>
-                  <i class="ph-duotone ph-shopping-cart-simple"></i>
-                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-xl-3 col-lg-4 col-6">
             <div class="product_card card">
               <figure class="contain">
-                <img src="images/products/product_5.webp" alt="Double Cheeseburger">
+                <img src="images/products/product_5.webp" alt="Burger">
               </figure>
               <div class="card-body">
-                <h5 class="card-title">Double Cheeseburger</h5>
-                <p class="card-text webkit_box">Two juicy beef patties stacked with double cheese and our signature sauce.</p>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="price">$11.45</p>
-                  <div class="rating">
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                  </div>
+                <h5 class="card-title webkit_box">Classic Burger with Fresh Ingredients and Cheese</h5>
+                <p class="card-text webkit_box">Juicy beef patty topped with lettuce, tomato, cheese, and your choice of condiments for a satisfying meal.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                  <p class="price">$<span>10.95</span></p>
+                  <a href="#" class="btn">
+                    <span>Add to Cart</span>
+                    <i class="ph-duotone ph-shopping-cart-simple"></i>
+                  </a>
                 </div>
-                <a href="#" class="btn">
-                  <span>Add to Cart</span>
-                  <i class="ph-duotone ph-shopping-cart-simple"></i>
-                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-xl-3 col-lg-4 col-6">
             <div class="product_card card">
               <figure class="contain">
-                <img src="images/products/product_6.webp" alt="BBQ Burger">
+                <img src="images/products/product_6.webp" alt="Sandwich">
               </figure>
               <div class="card-body">
-                <h5 class="card-title">BBQ Burger</h5>
-                <p class="card-text webkit_box">A smoky BBQ burger with grilled onions, crispy bacon, and tangy BBQ sauce.</p>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="price">$10.75</p>
-                  <div class="rating">
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                  </div>
+                <h5 class="card-title webkit_box">Delicious Sandwich with Fresh Bread and Fillings</h5>
+                <p class="card-text webkit_box">Your choice of meat, cheese, and vegetables on freshly baked bread for a perfect and quick meal option.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                  <p class="price">$<span>9.95</span></p>
+                  <a href="#" class="btn">
+                    <span>Add to Cart</span>
+                    <i class="ph-duotone ph-shopping-cart-simple"></i>
+                  </a>
                 </div>
-                <a href="#" class="btn">
-                  <span>Add to Cart</span>
-                  <i class="ph-duotone ph-shopping-cart-simple"></i>
-                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-xl-3 col-lg-4 col-6">
             <div class="product_card card">
               <figure class="contain">
-                <img src="images/products/product_7.webp" alt="Mushroom Swiss Burger">
+                <img src="images/products/product_7.webp" alt="Fries">
               </figure>
               <div class="card-body">
-                <h5 class="card-title">Mushroom Swiss Burger</h5>
-                <p class="card-text webkit_box">A savory burger with mushrooms sautéed in garlic, topped with Swiss cheese.</p>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="price">$9.85</p>
-                  <div class="rating">
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                  </div>
+                <h5 class="card-title webkit_box">Crispy Fries with Your Choice of Dipping Sauce</h5>
+                <p class="card-text webkit_box">Crispy fries cooked to a golden brown, served with your choice of dipping sauce for a perfect snack.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                  <p class="price">$<span>4.95</span></p>
+                  <a href="#" class="btn">
+                    <span>Add to Cart</span>
+                    <i class="ph-duotone ph-shopping-cart-simple"></i>
+                  </a>
                 </div>
-                <a href="#" class="btn">
-                  <span>Add to Cart</span>
-                  <i class="ph-duotone ph-shopping-cart-simple"></i>
-                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="col-xl-3 col-lg-4 col-6">
             <div class="product_card card">
               <figure class="contain">
-                <img src="images/products/product_8.webp" alt="Spicy Chicken Burger">
+                <img src="images/products/product_8.webp" alt="Milkshake">
               </figure>
               <div class="card-body">
-                <h5 class="card-title">Spicy Chicken Burger</h5>
-                <p class="card-text webkit_box">A spicy chicken patty with jalapeños, spicy mayo, and fresh veggies.</p>
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                  <p class="price">$9.55</p>
-                  <div class="rating">
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#" class="active">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                    <a href="#">
-                      <i class="ph-fill ph-star"></i>
-                    </a>
-                  </div>
+                <h5 class="card-title webkit_box">Thick and Creamy Milkshake with Choice of Flavors</h5>
+                <p class="card-text webkit_box">Thick and creamy milkshake made with your choice of ice cream flavor and toppings for a delicious treat.</p>
+                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                  <p class="price">$<span>5.95</span></p>
+                  <a href="#" class="btn">
+                    <span>Add to Cart</span>
+                    <i class="ph-duotone ph-shopping-cart-simple"></i>
+                  </a>
                 </div>
-                <a href="#" class="btn">
-                  <span>Add to Cart</span>
-                  <i class="ph-duotone ph-shopping-cart-simple"></i>
-                </a>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- discount -->
+    <section class="discount">
+      <div class="container-xl">
+        <div class="row">
+          <div class="col-md-6">
+            <a href="#" class="discount_card card">
+              <div class="card-body">
+                <h4 class="card-title">Uplifting anytime</h4>
+                <p class="card-text">Flat 7% Off on Beef items</p>
+                <button class="btn btn-secondary">
+                  <span>Order now</span>
+                </button>
+              </div>
+              <figure class="discount_img">
+                <img src="images/products/product_1.webp" alt="">
+              </figure>
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="#" class="discount_card card">
+              <div class="card-body">
+                <h4 class="card-title">Delicious Anytime</h4>
+                <p class="card-text">Flat 10% Off on Chicken items</p>
+                <button class="btn btn-secondary">
+                  <span>Order now</span>
+                </button>
+              </div>
+              <figure class="discount_img">
+                <img src="images/products/product_5.webp" alt="">
+              </figure>
+            </a>
           </div>
         </div>
       </div>
@@ -664,6 +526,65 @@
   <!--============================
   =            Footer            =
   =============================-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="navbar-brand">
+            <img src="./images/brand/logo-dark.svg" alt="">
+          </div>
+          <h5>Contact us</h5>
+          <ul class="list-unstyled footer_contact">
+            <li><i class="ph ph-map-pin-area"></i> 123 Main Street, City, Country</li>
+            <li><i class="ph ph-phone"></i> +1 234 567 890</li>
+            <li><i class="ph ph-envelope"></i> info@fastfood.com</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">Menu</a></li>
+            <li><a href="#" class="text-white">About Us</a></li>
+            <li><a href="#" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Information</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">About us</a></li>
+            <li><a href="#" class="text-white">Privicy Policy</a></li>
+            <li><a href="#" class="text-white">Terms & condition</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 offset-md-1">
+          <h5>Subscribe</h5>
+          <p class="subs_text">Subscribe to our newsletter to get latest updates</p>
+          <form class="subs_form">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              <button class="btn">
+                <i class="ph ph-envelope-simple"></i>
+                <span>subscribe</span>
+              </button>
+            </div>
+          </form>
+          <h5>Follow us</h5>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright text-center">
+      <div class="container-xl">
+        <p>&copy; 2024 Fast Food Restaurant. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
   <!--====  End of Footer  ====-->
   <!-- js files -->
   <script type="text/javascript" src="./plugins/jquery-3.7.1/jquery.min.js"></script>
