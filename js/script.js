@@ -32,6 +32,7 @@ $(function() {
   var categoriesSlider = new Swiper('.categories_slider', {
     loop: true,
     speed: 500,
+    autoplay: true,
     slidesPerView: "auto",
     spaceBetween: 20,
     navigation: {
