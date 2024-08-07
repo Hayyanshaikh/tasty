@@ -724,21 +724,19 @@ header {
   background: var(--black);
 }
 
-.home-page header {
-  padding-top: 10px;
-  z-index: 999;
-  width: 100%;
-  position: absolute;
+.home-page header{
   background: transparent;
 }
 
 .navbar {
   padding: 0;
+  width: 100%;
+  background: linear-gradient(180deg, black 50%, transparent 100%);
 }
 
 
 .home-page main section:first-child {
-  padding-top: 140px !important;
+  padding-top: 70px !important;
 }
 
 .header_action_btns {
@@ -1473,8 +1471,13 @@ footer a {
 }
 
 /* checkout */
-.checkout {
-  background-color: var(--primary-background);
+
+.checkout form {
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    background: var(--black);
+    border-radius: 10px;
 }
 
 .checkout_heading {
@@ -1566,7 +1569,7 @@ footer a {
 .quantity_counter {
   display: flex;
   align-items: center;
-  background: var(--black);
+  background: var(--primary-background);
   border-radius: 5px;
   overflow: hidden;
   padding: 0 5px;
@@ -1714,21 +1717,22 @@ footer a {
 
 /* menu page */
 .menu-page .categories {
-  background: var(--black);
+  padding-block: 40px !important;
+  background: transparent;
 }
 
+.menu-page .categories:after, .menu-page .categories:before {content: none;}
+
 .menu-page .popular_items {
-  background: var(--primary-background);
 }
 
 .menu-page .categories_item {
   padding: 15px;
-  background: var(--primary-background);
+  background: var(--black);
   border-radius: 10px;
 }
 
 .menu-page .popular_product_card {
-  background: var(--primary-background);
 }
 
 .menu-page .categories figure {
@@ -1842,9 +1846,6 @@ footer a {
 }
 
 /* order detail */
-.order_detail {
-  background: var(--primary-background);
-}
 
 .order_detail_wrapper {
   padding: 25px;
