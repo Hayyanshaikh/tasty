@@ -49,5 +49,5 @@ const convertToOffcanvas = () => {
   setTimeout(() => {
     $("#menu").show();
   }, 100);
-  $(window).width() < 992 ? menu.addClass('offcanvas offcanvas-end shows') : menu.removeClass('offcanvas offcanvas-start');
+  $(window).width() < 992 ? menu.addClass('offcanvas offcanvas-top shows') : menu.removeClass('offcanvas offcanvas-start');
 }

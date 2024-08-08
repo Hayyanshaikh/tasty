@@ -47,17 +47,21 @@
             </ul>
           </div>
         </div>
-        <div class="logo_parent">
+
+          <a href="login.html" class="header_action_btn login_btn d-lg-none d-flex">
+            <i class="ph ph-user"></i>
+          </a>
+        <div class="logo_parent order-3 order-lg-1">
           <a class="navbar-brand" href="index.html">
             <img src="images/brand/logo-dark.svg" alt="Logo">
           </a>
         </div>
-        <div class="languages dropdown d-none d-sm-block">
+        <div class="languages dropdown order-2 order-lg-3">
           <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
             <figure>
               <img src="images/flags/united-states.svg" alt="Bangladesh Flag">
             </figure>
-            <span>English</span>
+            <span class="d-none d-lg-block">English</span>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
             <li>
@@ -94,14 +98,18 @@
             </li>
           </ul>
         </div>
-        <div class="header_action_btns gap-3 ms-auto ms-sm-0 gap-sm-4">
+        <div class="header_action_btns gap-3 order-4 ms-auto ms-sm-0 gap-sm-4">
           <a href="#" class="header_action_btn cart_btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
             <i class="ph ph-shopping-cart-simple"></i>
             <div class="badge">2</div>
           </a>
-          <a href="login.html" class="header_action_btn login_btn">
+          <a href="login.html" class="header_action_btn login_btn d-lg-flex d-none">
             <i class="ph ph-user"></i>
           </a>
+
+        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+          <i class="ph-bold ph-list"></i>
+        </button>
           <!-- ⚠⚠⚠⚠ IF LOGIN ⚠⚠⚠⚠-->
           <!-- <div class="acount dropdown d-none d-lg-block">
             <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
@@ -158,9 +166,6 @@
             </ul>
           </div> -->
         </div>
-        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
-          <i class="ph-bold ph-list"></i>
-        </button>
       </div>
     </nav>
     <!-- Offcanvas Cart -->
@@ -209,7 +214,6 @@
       <div class="offcanvas-footer">
         <div class="d-flex justify-content-between gap-2 align-items-center">
           <h5 class="cart-total-price">Total: $30.00</h5>
-          
         </div>
         <div class="mt-2">
           <a href="checkout.html" class="btn w-100 mt-2">
@@ -235,7 +239,7 @@
         </div>
         
         <div class="row gy-4">
-          <div class="col-lg-6 col-sm-12 col-6">
+          <div class="col-lg-6">
             <a href="#" class="discount_card card">
               <div class="card-body">
                 <h4 class="card-title">Uplifting anytime</h4>
@@ -249,7 +253,7 @@
               </figure>
             </a>
           </div>
-          <div class="col-lg-6 col-sm-12 col-6">
+          <div class="col-lg-6">
             <a href="#" class="discount_card card">
               <div class="card-body">
                 <h4 class="card-title">Delicious Anytime</h4>
@@ -274,7 +278,7 @@
   <footer>
     <div class="container-xl">
       <div class="row gy-4">
-        <div class="col-md-3">
+        <div class="col-lg-3 col-sm-6">
           <div class="navbar-brand">
             <img src="./images/brand/logo-dark.svg" alt="">
           </div>
@@ -285,7 +289,7 @@
             <li><i class="ph ph-envelope"></i> info@fastfood.com</li>
           </ul>
         </div>
-        <div class="col-md-2">
+        <div class="col-lg-2 col-sm-6">
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
             <li><a href="#" class="text-white">Home</a></li>
@@ -294,7 +298,7 @@
             <li><a href="#" class="text-white">Contact</a></li>
           </ul>
         </div>
-        <div class="col-md-2">
+        <div class="col-lg-2 col-sm-6">
           <h5>Information</h5>
           <ul class="list-unstyled">
             <li><a href="#" class="text-white">About us</a></li>
@@ -302,7 +306,7 @@
             <li><a href="#" class="text-white">Terms & condition</a></li>
           </ul>
         </div>
-        <div class="col-md-4 offset-md-1">
+        <div class="col-lg-4 col-sm-6 offset-lg-1">
           <h5>Subscribe</h5>
           <p class="subs_text">Subscribe to our newsletter to get latest updates</p>
           <form class="subs_form">
@@ -316,10 +320,10 @@
           </form>
           <h5>Follow us</h5>
           <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-            <a href="#" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
-            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
-            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#" class="facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" class="twitter"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#" class="instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" class="youtube"><i class="ph ph-youtube-logo"></i></a>
           </div>
         </div>
       </div>

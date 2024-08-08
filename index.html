@@ -47,17 +47,20 @@
             </ul>
           </div>
         </div>
-        <div class="logo_parent">
+        <a href="login.html" class="header_action_btn login_btn d-lg-none d-flex">
+          <i class="ph ph-user"></i>
+        </a>
+        <div class="logo_parent order-3 order-lg-1">
           <a class="navbar-brand" href="index.html">
             <img src="images/brand/logo-dark.svg" alt="Logo">
           </a>
         </div>
-        <div class="languages dropdown d-none d-sm-block">
+        <div class="languages dropdown order-2 order-lg-3">
           <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
             <figure>
               <img src="images/flags/united-states.svg" alt="Bangladesh Flag">
             </figure>
-            <span>English</span>
+            <span class="d-none d-lg-block">English</span>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
             <li>
@@ -94,14 +97,17 @@
             </li>
           </ul>
         </div>
-        <div class="header_action_btns gap-3 ms-auto ms-sm-0 gap-sm-4">
+        <div class="header_action_btns gap-3 order-4 ms-auto ms-sm-0 gap-sm-4">
           <a href="#" class="header_action_btn cart_btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
             <i class="ph ph-shopping-cart-simple"></i>
             <div class="badge">2</div>
           </a>
-          <a href="login.html" class="header_action_btn login_btn">
+          <a href="login.html" class="header_action_btn login_btn d-lg-flex d-none">
             <i class="ph ph-user"></i>
           </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+            <i class="ph-bold ph-list"></i>
+          </button>
           <!-- ⚠⚠⚠⚠ IF LOGIN ⚠⚠⚠⚠-->
           <!-- <div class="acount dropdown d-none d-lg-block">
             <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
@@ -158,9 +164,6 @@
             </ul>
           </div> -->
         </div>
-        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
-          <i class="ph-bold ph-list"></i>
-        </button>
       </div>
     </nav>
     <!-- Offcanvas Cart -->
@@ -209,7 +212,6 @@
       <div class="offcanvas-footer">
         <div class="d-flex justify-content-between gap-2 align-items-center">
           <h5 class="cart-total-price">Total: $30.00</h5>
-          
         </div>
         <div class="mt-2">
           <a href="checkout.html" class="btn w-100 mt-2">
@@ -369,7 +371,7 @@
           </div>
         </div>
         <div class="row g-4">
-          <div class="col-xl-3 col-lg-4 col-6">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
               <figure class="contain">
                 <img src="images/products/product_1.webp" alt="Cheeseburger">
@@ -377,7 +379,7 @@
               <div class="card-body">
                 <h5 class="card-title webkit_box">Delicious Cheeseburger with Melted Cheese</h5>
                 <p class="card-text webkit_box">Juicy beef patty with melted cheese, fresh lettuce, and a tangy sauce for extra flavor.</p>
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                <div class="d-flex justify-content-between align-items-end gap-2">
                   <p class="price">$<span>9.45</span></p>
                   <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span>Add to Cart</span>
@@ -387,7 +389,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-6">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
               <figure class="contain">
                 <img src="images/products/product_2.webp" alt="Pizza">
@@ -395,7 +397,7 @@
               <div class="card-body">
                 <h5 class="card-title webkit_box">Freshly Baked Pizza with Mozzarella Cheese</h5>
                 <p class="card-text webkit_box">Freshly baked dough topped with marinara sauce, mozzarella cheese, and your choice of delicious toppings.</p>
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                <div class="d-flex justify-content-between align-items-end gap-2">
                   <p class="price">$<span>12.95</span></p>
                   <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span>Add to Cart</span>
@@ -405,7 +407,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-6">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
               <figure class="contain">
                 <img src="images/products/product_3.webp" alt="Tacos">
@@ -413,7 +415,7 @@
               <div class="card-body">
                 <h5 class="card-title webkit_box">Tasty Tacos with Variety of Fresh Fillings</h5>
                 <p class="card-text webkit_box">Soft or hard shell tacos filled with your choice of meat, beans, cheese, and fresh toppings for a perfect meal.</p>
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                <div class="d-flex justify-content-between align-items-end gap-2">
                   <p class="price">$<span>7.95</span></p>
                   <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span>Add to Cart</span>
@@ -423,7 +425,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-6">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
               <figure class="contain">
                 <img src="images/products/product_4.webp" alt="Salad">
@@ -431,7 +433,7 @@
               <div class="card-body">
                 <h5 class="card-title webkit_box">Healthy Salad with Fresh Greens and Toppings</h5>
                 <p class="card-text webkit_box">Fresh mixed greens with your choice of toppings, including vegetables, fruits, and nuts for a healthy option.</p>
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                <div class="d-flex justify-content-between align-items-end gap-2">
                   <p class="price">$<span>8.95</span></p>
                   <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span>Add to Cart</span>
@@ -441,7 +443,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-6">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
               <figure class="contain">
                 <img src="images/products/product_5.webp" alt="Burger">
@@ -449,7 +451,7 @@
               <div class="card-body">
                 <h5 class="card-title webkit_box">Classic Burger with Fresh Ingredients and Cheese</h5>
                 <p class="card-text webkit_box">Juicy beef patty topped with lettuce, tomato, cheese, and your choice of condiments for a satisfying meal.</p>
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                <div class="d-flex justify-content-between align-items-end gap-2">
                   <p class="price">$<span>10.95</span></p>
                   <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span>Add to Cart</span>
@@ -459,7 +461,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-6">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
               <figure class="contain">
                 <img src="images/products/product_6.webp" alt="Sandwich">
@@ -467,7 +469,7 @@
               <div class="card-body">
                 <h5 class="card-title webkit_box">Delicious Sandwich with Fresh Bread and Fillings</h5>
                 <p class="card-text webkit_box">Your choice of meat, cheese, and vegetables on freshly baked bread for a perfect and quick meal option.</p>
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                <div class="d-flex justify-content-between align-items-end gap-2">
                   <p class="price">$<span>9.95</span></p>
                   <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span>Add to Cart</span>
@@ -477,7 +479,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-6">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
               <figure class="contain">
                 <img src="images/products/product_7.webp" alt="Fries">
@@ -485,7 +487,7 @@
               <div class="card-body">
                 <h5 class="card-title webkit_box">Crispy Fries with Your Choice of Dipping Sauce</h5>
                 <p class="card-text webkit_box">Crispy fries cooked to a golden brown, served with your choice of dipping sauce for a perfect snack.</p>
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                <div class="d-flex justify-content-between align-items-end gap-2">
                   <p class="price">$<span>4.95</span></p>
                   <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span>Add to Cart</span>
@@ -495,7 +497,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-6">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
               <figure class="contain">
                 <img src="images/products/product_8.webp" alt="Milkshake">
@@ -503,7 +505,7 @@
               <div class="card-body">
                 <h5 class="card-title webkit_box">Thick and Creamy Milkshake with Choice of Flavors</h5>
                 <p class="card-text webkit_box">Thick and creamy milkshake made with your choice of ice cream flavor and toppings for a delicious treat.</p>
-                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center align-items-sm-end gap-2">
+                <div class="d-flex justify-content-between align-items-end gap-2">
                   <p class="price">$<span>5.95</span></p>
                   <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span>Add to Cart</span>
@@ -565,7 +567,7 @@
           </div>
         </div>
         <div class="row gy-4">
-          <div class="col-lg-6 col-sm-12 col-6">
+          <div class="col-lg-6">
             <div class="popular_product_card card">
               <figure class="contain">
                 <img src="images/products/product_1.webp" alt="Cheeseburger">
@@ -576,13 +578,14 @@
                 <div class="d-flex justify-content-between align-items-center align-items-sm-end gap-2 mt-auto">
                   <p class="price">$<span>9.45</span></p>
                   <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal">
+                    <span class="d-flex d-sm-none">Add to cart</span>
                     <i class="ph-duotone ph-shopping-cart-simple"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-sm-12 col-6">
+          <div class="col-lg-6">
             <div class="popular_product_card card">
               <figure class="contain">
                 <img src="images/products/product_2.webp" alt="Veggie Pizza">
@@ -593,13 +596,14 @@
                 <div class="d-flex justify-content-between align-items-center align-items-sm-end gap-2 mt-auto">
                   <p class="price">$<span>12.99</span></p>
                   <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal">
+                    <span class="d-flex d-sm-none">Add to cart</span>
                     <i class="ph-duotone ph-shopping-cart-simple"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-sm-12 col-6">
+          <div class="col-lg-6">
             <div class="popular_product_card card">
               <figure class="contain">
                 <img src="images/products/product_3.webp" alt="Chicken Wrap">
@@ -610,13 +614,14 @@
                 <div class="d-flex justify-content-between align-items-center align-items-sm-end gap-2 mt-auto">
                   <p class="price">$<span>8.75</span></p>
                   <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal">
+                    <span class="d-flex d-sm-none">Add to cart</span>
                     <i class="ph-duotone ph-shopping-cart-simple"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-sm-12 col-6">
+          <div class="col-lg-6">
             <div class="popular_product_card card">
               <figure class="contain">
                 <img src="images/products/product_4.webp" alt="Chocolate Cake">
@@ -627,6 +632,7 @@
                 <div class="d-flex justify-content-between align-items-center align-items-sm-end gap-2 mt-auto">
                   <p class="price">$<span>5.50</span></p>
                   <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal">
+                    <span class="d-flex d-sm-none">Add to cart</span>
                     <i class="ph-duotone ph-shopping-cart-simple"></i>
                   </a>
                 </div>
@@ -767,10 +773,10 @@
           </form>
           <h5>Follow us</h5>
           <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
-            <a href="#" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
-            <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
-            <a href="#" aria-label="YouTube"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#" class="facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" class="twitter"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#" class="instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" class="youtube"><i class="ph ph-youtube-logo"></i></a>
           </div>
         </div>
       </div>
