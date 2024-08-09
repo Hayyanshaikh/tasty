@@ -25,32 +25,24 @@
   =            Header            =
   =============================-->
   <header>
-    <nav class="navbar py-2 d-block navbar-expand-lg">
+    <nav class="navbar py-2 navbar-expand-lg">
       <div class="container-xl justify-content-start gap-3 gap-sm-4">
-        <div class="menu_offcanvas" id="menu">
-          <div class="offcanvas-header d-lg-none">
-            <a href="index.html" class="navbar-brand">
-              <img src="images/brand/logo.svg" alt="Logo">
-            </a>
-          </div>
-          <div class="navbar-collapse gap-4 offcanvas-body">
-            <ul class="navbar-nav w-100 me-lg-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="offers.html">Offers</a>
-              </li>
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse gap-4" id="navigationBar">
+          <ul class="navbar-nav w-100 me-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="offers.html">Offers</a>
+            </li>
+          </ul>
         </div>
-
-          <a href="login.html" class="header_action_btn login_btn d-lg-none d-flex">
-            <i class="ph ph-user"></i>
-          </a>
+        <a href="login.html" class="header_action_btn login_btn d-lg-none d-flex">
+          <i class="ph ph-user"></i>
+        </a>
         <div class="logo_parent order-3 order-lg-1">
           <a class="navbar-brand" href="index.html">
             <img src="images/brand/logo-dark.svg" alt="Logo">
@@ -106,10 +98,9 @@
           <a href="login.html" class="header_action_btn login_btn d-lg-flex d-none">
             <i class="ph ph-user"></i>
           </a>
-
-        <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
-          <i class="ph-bold ph-list"></i>
-        </button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationBar">
+            <i class="ph-bold ph-list"></i>
+          </button>
           <!-- ⚠⚠⚠⚠ IF LOGIN ⚠⚠⚠⚠-->
           <!-- <div class="acount dropdown d-none d-lg-block">
             <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
@@ -223,6 +214,7 @@
       </div>
     </div>
   </header>
+
   <!--====  End of Header  ====-->
   <!--===========================
   =            Login            =
@@ -285,7 +277,7 @@
             <li><i class="ph ph-envelope"></i> info@fastfood.com</li>
           </ul>
         </div>
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-2 col-6">
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
             <li><a href="#" class="text-white">Home</a></li>
@@ -294,7 +286,7 @@
             <li><a href="#" class="text-white">Contact</a></li>
           </ul>
         </div>
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-2 col-6">
           <h5>Information</h5>
           <ul class="list-unstyled">
             <li><a href="#" class="text-white">About us</a></li>

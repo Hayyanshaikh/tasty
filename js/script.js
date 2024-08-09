@@ -1,8 +1,4 @@
 $(function() {
-  $(window).resize(function() {
-    convertToOffcanvas();
-  }).trigger('resize');
-
   var forms = $('.needs-validation');
   forms.each(function() {
     $(this).on('submit', function(event) {
@@ -40,6 +36,10 @@ $(function() {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  $(window).resize(function() {
+    convertToOffcanvas();
+  }).trigger('resize');
 });
 
 const convertToOffcanvas = () => {
@@ -49,5 +49,5 @@ const convertToOffcanvas = () => {
   setTimeout(() => {
     $("#menu").show();
   }, 100);
-  $(window).width() < 992 ? menu.addClass('offcanvas offcanvas-top shows') : menu.removeClass('offcanvas offcanvas-start');
+  $(window).width() < 992 ? menu.addClass('offcanvas offcanvas-start') : menu.removeClass('offcanvas offcanvas-start');
 }
