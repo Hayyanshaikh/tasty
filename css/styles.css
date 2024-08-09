@@ -1353,30 +1353,61 @@ footer a {
   color: var(--bs-gray-400);
 }
 
-.social-links {
+.social_icons {
   display: flex;
   align-items: center;
   grid-gap: 10px;
   justify-content: flex-start;
 }
 
-.social-links a {
-  width: 35px;
-  height: 35px;
+.icon {
+  height: 40px;
+  width: 40px;
   display: flex;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 4px;
-  color: var(--white);
   align-items: center;
-  transition: 0.3s ease;
   justify-content: center;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  overflow: hidden;
 }
 
-.social-links a img{
-  height: 100%;
-  width: 100%;
+.icon figure {
+  height: 20px;
+  width: 20px;
+}
+
+.google_plus figure {
+  height: 25px;
+  width: 25px;
+}
+
+.icon figure img {
   object-fit: contain;
+}
+
+.icon.facebook {
+  background: rgba(24, 119, 242, 1);
+}
+
+.icon.twitter {
+  background: rgba(93, 169, 221, 1);
+}
+
+.icon.google_plus {
+  background: rgba(225, 56, 56, 1);
+}
+
+.icon.linkedin {
+  background: rgba(2, 80, 177, 1);
+}
+
+.icon.pinterest {
+  background: rgba(230, 0, 35, 1);
+}
+
+.icon.instagram {
+  background: linear-gradient(216deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
 }
 
 .copyright {
