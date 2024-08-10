@@ -725,7 +725,7 @@ header {
 
 .home-page header {
   position: absolute;
-  background: transparent;
+  background: var(--black);
 }
 
 .navbar {
@@ -774,11 +774,11 @@ header .navbar-collapse {
   border-radius: 0 0 5px 5px;
 }
 
-.home-page .navbar-brand {
+/*.home-page .navbar-brand {
   padding: 0;
   border-radius: 0;
   background: transparent;
-}
+}*/
 
 .menu_offcanvas .offcanvas-header{
   background: var(--black);
@@ -797,9 +797,9 @@ header .navbar-collapse {
   filter: none;
 }
 
-.home-page .navbar-brand img {
+/*.home-page .navbar-brand img {
   filter: none;
-}
+}*/
 
 .navbar-brand img {
   width: 100%;
