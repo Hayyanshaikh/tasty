@@ -246,35 +246,43 @@
   ===========================-->
   <main>
     <!-- hero -->
-    <section class="hero py-4">
+    <section class="hero">
       <div class="container-xl">
-        <div class="row gy-4 flex-column-reverse flex-lg-row align-items-center">
-          <div class="col-lg-6 col-12 text-center text-lg-start">
-            <hgroup>
-              <span class="hero_deal">Buy 3 Get 4th FREE!</span>
-              <h1 class="hero_heading">Enjoy your <span>Delicious</span> Food</h1>
-              <p class="hero_pera">Get 20% off on your favorite Zinger burger. Savor the flavor and save now! Limited-time offer!</p>
-            </hgroup>
-            <a href="#" class="btn btn-secondary btn-lg">
-              <span>Order Now</span>
-            </a>
-          </div>
-          <div class="col-lg-5 offset-lg-1">
-            <figure class="hero_img contain">
-              <img src="images/banners/hero_img.png" alt="burger">
-            </figure>
+        
+        <div class="swiper hero_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure class="hero_img">
+                <img src="images/banners/banner_4.webp" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="hero_img">
+                <img src="images/banners/banner_3.webp" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="hero_img">
+                <img src="images/banners/banner_2.webp" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="hero_img">
+                <img src="images/banners/banner_1.webp" alt="">
+              </figure>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Our Menu -->
-    <section class="categories">
+    <section class="categories p-0">
       <div class="container-xl">
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-12">
             <h2 class="heading">Food Categories</h2>
           </div>
-        </div>
+        </div> -->
         <div class="swiper categories_slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -283,7 +291,7 @@
                   <img src="images/categories/categories_2.webp" alt="biryani">
                 </figure>
                 <hgroup>
-                  <h4 class="categories_title">biryani</h4>
+                  <h4 class="categories_title webkit_box">biryani</h4>
                 </hgroup>
               </a>
             </div>
@@ -293,7 +301,7 @@
                   <img src="images/categories/categories_3.webp" alt="burger">
                 </figure>
                 <hgroup>
-                  <h4 class="categories_title">burger</h4>
+                  <h4 class="categories_title webkit_box">burger</h4>
                 </hgroup>
               </a>
             </div>
@@ -303,7 +311,7 @@
                   <img src="images/categories/categories_4.webp" alt="christmas-dinner">
                 </figure>
                 <hgroup>
-                  <h4 class="categories_title">christmas-dinner</h4>
+                  <h4 class="categories_title webkit_box">christmas-dinner</h4>
                 </hgroup>
               </a>
             </div>
@@ -313,7 +321,7 @@
                   <img src="images/categories/categories_5.webp" alt="lobster">
                 </figure>
                 <hgroup>
-                  <h4 class="categories_title">lobster</h4>
+                  <h4 class="categories_title webkit_box">lobster</h4>
                 </hgroup>
               </a>
             </div>
@@ -323,7 +331,7 @@
                   <img src="images/categories/categories_6.webp" alt="salad">
                 </figure>
                 <hgroup>
-                  <h4 class="categories_title">salad</h4>
+                  <h4 class="categories_title webkit_box">salad</h4>
                 </hgroup>
               </a>
             </div>
@@ -333,7 +341,7 @@
                   <img src="images/categories/categories_7.webp" alt="sandwich">
                 </figure>
                 <hgroup>
-                  <h4 class="categories_title">sandwich</h4>
+                  <h4 class="categories_title webkit_box">sandwich</h4>
                 </hgroup>
               </a>
             </div>
@@ -343,7 +351,7 @@
                   <img src="images/categories/categories_8.webp" alt="soup">
                 </figure>
                 <hgroup>
-                  <h4 class="categories_title">soup</h4>
+                  <h4 class="categories_title webkit_box">soup</h4>
                 </hgroup>
               </a>
             </div>
@@ -353,7 +361,7 @@
                   <img src="images/categories/categories_1.webp" alt="steak">
                 </figure>
                 <hgroup>
-                  <h4 class="categories_title">steak</h4>
+                  <h4 class="categories_title webkit_box">steak</h4>
                 </hgroup>
               </a>
             </div>
@@ -363,7 +371,7 @@
                   <img src="images/categories/categories_2.webp" alt="taco">
                 </figure>
                 <hgroup>
-                  <h4 class="categories_title">taco</h4>
+                  <h4 class="categories_title webkit_box">taco</h4>
                 </hgroup>
               </a>
             </div>
@@ -373,7 +381,7 @@
                   <img src="images/categories/categories_3.webp" alt="veggie-burger">
                 </figure>
                 <hgroup>
-                  <h4 class="categories_title">veggie-burger</h4>
+                  <h4 class="categories_title webkit_box">veggie-burger</h4>
                 </hgroup>
               </a>
             </div>
@@ -385,14 +393,15 @@
     <section class="featured_product">
       <div class="container-xl">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 text-center">
             <h2 class="heading">Featured Items</h2>
+            <p class="heading_pera">Explore our handpicked selection of the most popular and top-rated dishes, crafted to perfection just for you. Don’t miss out on these delicious highlights!</p>
           </div>
         </div>
         <div class="row g-4">
           <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
-              <figure class="contain">
+              <figure>
                 <img src="images/products/product_1.webp" alt="Cheeseburger">
               </figure>
               <div class="card-body">
@@ -410,7 +419,7 @@
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
-              <figure class="contain">
+              <figure>
                 <img src="images/products/product_2.webp" alt="Pizza">
               </figure>
               <div class="card-body">
@@ -428,7 +437,7 @@
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
-              <figure class="contain">
+              <figure>
                 <img src="images/products/product_3.webp" alt="Tacos">
               </figure>
               <div class="card-body">
@@ -446,7 +455,7 @@
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
-              <figure class="contain">
+              <figure>
                 <img src="images/products/product_4.webp" alt="Salad">
               </figure>
               <div class="card-body">
@@ -464,7 +473,7 @@
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
-              <figure class="contain">
+              <figure>
                 <img src="images/products/product_5.webp" alt="Burger">
               </figure>
               <div class="card-body">
@@ -482,7 +491,7 @@
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
-              <figure class="contain">
+              <figure>
                 <img src="images/products/product_6.webp" alt="Sandwich">
               </figure>
               <div class="card-body">
@@ -500,8 +509,8 @@
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
-              <figure class="contain">
-                <img src="images/products/product_7.webp" alt="Fries">
+              <figure>
+                <img src="images/products/product_1.webp" alt="Fries">
               </figure>
               <div class="card-body">
                 <h5 class="card-title webkit_box">Crispy Fries with Your Choice of Dipping Sauce</h5>
@@ -518,8 +527,8 @@
           </div>
           <div class="col-xl-3 col-lg-4 col-sm-6">
             <div class="product_card card">
-              <figure class="contain">
-                <img src="images/products/product_8.webp" alt="Milkshake">
+              <figure>
+                <img src="images/products/product_2.webp" alt="Milkshake">
               </figure>
               <div class="card-body">
                 <h5 class="card-title webkit_box">Thick and Creamy Milkshake with Choice of Flavors</h5>
@@ -541,13 +550,14 @@
     <section class="discount">
       <div class="container-xl">
         <div class="row">
-          <div class="col-12">
-            <h2 class="heading">What we offers ?</h2>
+          <div class="col-12 text-center">
+            <h2 class="heading">What We Offer?</h2>
+            <p class="heading_pera">Enjoy a variety of dishes made with fresh ingredients. From savory to sweet, our menu has something special for every taste!</p>
           </div>
         </div>
         <div class="row gy-4">
           <div class="col-lg-6">
-            <a href="#" class="discount_card card">
+            <a href="#" class="discount_card card discount_big_card">
               <div class="card-body">
                 <h4 class="card-title">Uplifting anytime</h4>
                 <p class="card-text">Flat 7% Off on Beef items</p>
@@ -556,11 +566,23 @@
                 </button>
               </div>
               <figure class="discount_img">
-                <img src="images/products/product_1.webp" alt="">
+                <img src="images/banners/discount_1.webp" alt="">
               </figure>
             </a>
           </div>
           <div class="col-lg-6">
+            <a href="#" class="discount_card card mb-4">
+              <div class="card-body">
+                <h4 class="card-title">Delicious Anytime</h4>
+                <p class="card-text">Flat 10% Off on Chicken items</p>
+                <button class="btn btn-secondary">
+                  <span>Order now</span>
+                </button>
+              </div>
+              <figure class="discount_img">
+                <img src="images/banners/discount_2.webp" alt="">
+              </figure>
+            </a>
             <a href="#" class="discount_card card">
               <div class="card-body">
                 <h4 class="card-title">Delicious Anytime</h4>
@@ -570,7 +592,7 @@
                 </button>
               </div>
               <figure class="discount_img">
-                <img src="images/products/product_5.webp" alt="">
+                <img src="images/banners/discount_3.webp" alt="">
               </figure>
             </a>
           </div>
@@ -581,14 +603,15 @@
     <section class="popular_items">
       <div class="container-xl">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 text-center">
             <h2 class="heading">Most Popular Items</h2>
+            <p class="heading_pera">Discover our top-rated dishes that everyone loves. These favorites are sure to satisfy your cravings!</p>
           </div>
         </div>
         <div class="row gy-4">
           <div class="col-lg-6">
             <div class="popular_product_card card">
-              <figure class="contain">
+              <figure>
                 <img src="images/products/product_1.webp" alt="Cheeseburger">
               </figure>
               <div class="card-body">
@@ -606,7 +629,7 @@
           </div>
           <div class="col-lg-6">
             <div class="popular_product_card card">
-              <figure class="contain">
+              <figure>
                 <img src="images/products/product_2.webp" alt="Veggie Pizza">
               </figure>
               <div class="card-body">
@@ -624,7 +647,7 @@
           </div>
           <div class="col-lg-6">
             <div class="popular_product_card card">
-              <figure class="contain">
+              <figure>
                 <img src="images/products/product_3.webp" alt="Chicken Wrap">
               </figure>
               <div class="card-body">
@@ -642,7 +665,7 @@
           </div>
           <div class="col-lg-6">
             <div class="popular_product_card card">
-              <figure class="contain">
+              <figure>
                 <img src="images/products/product_4.webp" alt="Chocolate Cake">
               </figure>
               <div class="card-body">
