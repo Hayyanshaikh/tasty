@@ -27,10 +27,11 @@ $(function() {
   var categoriesSlider = new Swiper('.categories_slider', {
     loop: true,
     speed: 500,
-    slidesPerView: 6,
-    autoplay: {
-      delay: 5000,
-    },
+    slidesPerView: 5,
+    spaceBetween: 30,
+    // autoplay: {
+    //   delay: 5000,
+    // },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

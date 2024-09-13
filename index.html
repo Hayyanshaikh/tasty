@@ -27,6 +27,11 @@
   <header>
     <nav class="navbar py-2 navbar-expand-lg">
       <div class="container-xl justify-content-start gap-3 gap-sm-4">
+        <div class="logo_parent">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/brand/logo-dark.svg" alt="Logo">
+          </a>
+        </div>
         <div class="menu_offcanvas" id="menu">
           <div class="offcanvas-header d-flex d-lg-none">
             <a href="index.html" class="navbar-brand">
@@ -66,20 +71,12 @@
             <span>Order Now</span>
           </a>
         </div>
-        <a href="login.html" class="header_action_btn login_btn d-lg-none d-flex">
-          <i class="ph ph-user"></i>
-        </a>
-        <div class="logo_parent order-3 order-lg-1">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/brand/logo-dark.svg" alt="Logo">
-          </a>
-        </div>
-        <div class="languages dropdown order-2 order-lg-3">
+        <div class="languages dropdown">
           <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
             <figure>
               <img src="images/flags/united-states.svg" alt="Bangladesh Flag">
             </figure>
-            <span class="d-none d-lg-block">English</span>
+            <span>English</span>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
             <li>
@@ -116,7 +113,7 @@
             </li>
           </ul>
         </div>
-        <div class="header_action_btns gap-3 order-4 ms-auto ms-sm-0 gap-sm-4">
+        <div class="header_action_btns gap-3 gap-sm-4">
           <a href="#" class="header_action_btn cart_btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
             <i class="ph ph-shopping-cart-simple"></i>
             <div class="badge">2</div>
@@ -250,150 +247,176 @@
       <div class="swiper hero_slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <a href="#" class="hero_slide">
-              <div class="hero_content">
-                <hgroup>
-                  <h1 class="hero_heading">crispy chicken burger</h1>
-                  <p class="hero_pera">Our crispy chicken burger is a flavor explosion that will leave you craving more.</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span>order now</span>
-                </a>
-              </div>
-              <figure class="hero_img">
-                <img src="images/banners/banner_1.webp" alt="">
-              </figure>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="hero_slide">
-              <div class="hero_content">
-                <hgroup>
-                  <h1 class="hero_heading">veggie delight burger</h1>
-                  <p class="hero_pera">A plant-based delight that's packed with flavor and nutrition.</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span>order now</span>
-                </a>
-              </div>
-              <figure class="hero_img">
-                <img src="images/banners/banner_2.webp" alt="">
-              </figure>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="hero_slide">
-              <div class="hero_content">
-                <hgroup>
-                  <h1 class="hero_heading">grilled beef burger</h1>
-                  <p class="hero_pera">Secret family recipes are the stuff of legends and Stack burger blend is no exception.</p>
-                </hgroup>
-                <a href="#" class="btn">
-                  <span>order now</span>
-                </a>
-              </div>
-              <figure class="hero_img">
-                <img src="images/banners/banner_3.webp" alt="">
-              </figure>
-            </a>
+            <div class="container-xl">
+              <a href="#" class="hero_slide">
+                <div class="hero_content">
+                  <hgroup>
+                    <h1 class="hero_heading">crispy chicken <span>burger</span></h1>
+                    <p class="hero_pera">Our crispy chicken burger is a flavor explosion that will leave you craving more.</p>
+                  </hgroup>
+                  <button class="btn">
+                    <span>order now</span>
+                  </button>
+                </div>
+                <figure class="hero_img">
+                  <img src="images/banners/burger_banner.webp" alt="">
+                </figure>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Our Menu -->
-    <section class="categories pt-0">
-      <h2 class="heading py-4 text-center mb-0">Food Categories</h2>
-      <div class="swiper categories_slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="#" class="categories_item">
-              <figure class="categories_img contain">
-                <img src="images/categories/categories_1.webp" alt="biryani">
-              </figure>
-              <hgroup>
-                <h4 class="categories_title webkit_box">biryani</h4>
-              </hgroup>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="categories_item">
-              <figure class="categories_img contain">
-                <img src="images/categories/categories_2.webp" alt="biryani">
-              </figure>
-              <hgroup>
-                <h4 class="categories_title webkit_box">biryani</h4>
-              </hgroup>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="categories_item">
-              <figure class="categories_img contain">
-                <img src="images/categories/categories_3.webp" alt="pizza">
-              </figure>
-              <hgroup>
-                <h4 class="categories_title webkit_box">pizza</h4>
-              </hgroup>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="categories_item">
-              <figure class="categories_img contain">
-                <img src="images/categories/categories_4.webp" alt="burger">
-              </figure>
-              <hgroup>
-                <h4 class="categories_title webkit_box">burger</h4>
-              </hgroup>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="categories_item">
-              <figure class="categories_img contain">
-                <img src="images/categories/categories_5.webp" alt="pasta">
-              </figure>
-              <hgroup>
-                <h4 class="categories_title webkit_box">pasta</h4>
-              </hgroup>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="categories_item">
-              <figure class="categories_img contain">
-                <img src="images/categories/categories_6.webp" alt="chicken">
-              </figure>
-              <hgroup>
-                <h4 class="categories_title webkit_box">chicken</h4>
-              </hgroup>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="categories_item">
-              <figure class="categories_img contain">
-                <img src="images/categories/categories_7.webp" alt="seafood">
-              </figure>
-              <hgroup>
-                <h4 class="categories_title webkit_box">seafood</h4>
-              </hgroup>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="categories_item">
-              <figure class="categories_img contain">
-                <img src="images/categories/categories_8.webp" alt="salad">
-              </figure>
-              <hgroup>
-                <h4 class="categories_title webkit_box">salad</h4>
-              </hgroup>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="#" class="categories_item">
-              <figure class="categories_img contain">
-                <img src="images/categories/categories_9.webp" alt="drinks">
-              </figure>
-              <hgroup>
-                <h4 class="categories_title webkit_box">drinks</h4>
-              </hgroup>
-            </a>
+    <section class="categories">
+      <div class="container-xl">
+        <h2 class="heading text-center mb-4">Food Categories</h2>
+        <div class="swiper categories_slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_1.webp" alt="biryani">
+                </figure>
+                <hgroup>
+                  <h4 class="categories_title webkit_box">biryani</h4>
+                </hgroup>
+                <div class="span-group">
+                  <span>biryani</span>
+                  <span>biryani</span>
+                  <span>biryani</span>
+                  <span>biryani</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_2.webp" alt="biryani">
+                </figure>
+                <hgroup>
+                  <h4 class="categories_title webkit_box">biryani</h4>
+                </hgroup>
+                <div class="span-group">
+                  <span>biryani</span>
+                  <span>biryani</span>
+                  <span>biryani</span>
+                  <span>biryani</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_3.webp" alt="pizza">
+                </figure>
+                <hgroup>
+                  <h4 class="categories_title webkit_box">pizza</h4>
+                </hgroup>
+                <div class="span-group">
+                  <span>pizza</span>
+                  <span>pizza</span>
+                  <span>pizza</span>
+                  <span>pizza</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_4.webp" alt="burger">
+                </figure>
+                <hgroup>
+                  <h4 class="categories_title webkit_box">burger</h4>
+                </hgroup>
+                <div class="span-group">
+                  <span>burger</span>
+                  <span>burger</span>
+                  <span>burger</span>
+                  <span>burger</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_5.webp" alt="pasta">
+                </figure>
+                <hgroup>
+                  <h4 class="categories_title webkit_box">pasta</h4>
+                </hgroup>
+                <div class="span-group">
+                  <span>pasta</span>
+                  <span>pasta</span>
+                  <span>pasta</span>
+                  <span>pasta</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_6.webp" alt="chicken">
+                </figure>
+                <hgroup>
+                  <h4 class="categories_title webkit_box">chicken</h4>
+                </hgroup>
+                <div class="span-group">
+                  <span>chicken</span>
+                  <span>chicken</span>
+                  <span>chicken</span>
+                  <span>chicken</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_7.webp" alt="seafood">
+                </figure>
+                <hgroup>
+                  <h4 class="categories_title webkit_box">seafood</h4>
+                </hgroup>
+                <div class="span-group">
+                  <span>seafood</span>
+                  <span>seafood</span>
+                  <span>seafood</span>
+                  <span>seafood</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_8.webp" alt="salad">
+                </figure>
+                <hgroup>
+                  <h4 class="categories_title webkit_box">salad</h4>
+                </hgroup>
+                <div class="span-group">
+                  <span>salad</span>
+                  <span>salad</span>
+                  <span>salad</span>
+                  <span>salad</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="categories_item">
+                <figure class="categories_img contain">
+                  <img src="images/categories/categories_9.webp" alt="drinks">
+                </figure>
+                <hgroup>
+                  <h4 class="categories_title webkit_box">drinks</h4>
+                </hgroup>
+                <div class="span-group">
+                  <span>drinks</span>
+                  <span>drinks</span>
+                  <span>drinks</span>
+                  <span>drinks</span>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
