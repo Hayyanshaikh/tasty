@@ -27,16 +27,39 @@ $(function() {
   var categoriesSlider = new Swiper('.categories_slider', {
     loop: true,
     speed: 500,
-    slidesPerView: 5,
+    autoplay: {
+      delay: 5000,
+    },
+    slidesPerView: 2,
     spaceBetween: 30,
-    // autoplay: {
-    //   delay: 5000,
-    // },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      // When window width is <= 1200px
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+      },
+      // When window width is <= 992px
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+      // When window width is <= 768px
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      // When window width is <= 576px
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 5,
+      },
+    },
   });
+
 
   $(window).resize(function() {
     convertToOffcanvas();

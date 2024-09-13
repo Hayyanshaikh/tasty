@@ -27,33 +27,56 @@
   <header>
     <nav class="navbar py-2 navbar-expand-lg">
       <div class="container-xl justify-content-start gap-3 gap-sm-4">
-        <div class="collapse navbar-collapse gap-4" id="navigationBar">
-          <ul class="navbar-nav w-100 me-lg-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="offers.html">Offers</a>
-            </li>
-          </ul>
-        </div>
-        <a href="login.html" class="header_action_btn login_btn d-lg-none d-flex">
-          <i class="ph ph-user"></i>
-        </a>
-        <div class="logo_parent order-3 order-lg-1">
+        <div class="logo_parent">
           <a class="navbar-brand" href="index.html">
             <img src="images/brand/logo-dark.svg" alt="Logo">
           </a>
         </div>
-        <div class="languages dropdown order-2 order-lg-3">
+        <div class="menu_offcanvas" id="menu">
+          <div class="offcanvas-header d-flex d-lg-none">
+            <a href="index.html" class="navbar-brand">
+              <img src="images/brand/logo-dark.svg" alt="">
+            </a>
+          </div>
+          <div class="offcanvas-body d-flex flex-column">
+            <div class="navbar-collapse gap-4">
+              <ul class="navbar-nav w-100 me-lg-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="offers.html">Offers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="social-links d-flex d-lg-none justify-content-center mt-auto">
+              <a href="#">
+                <img src="images/icons/facebook.svg" alt="Facebook">
+              </a>
+              <a href="#">
+                <img src="images/icons/twitter.svg" alt="Twitter">
+              </a>
+              <a href="#">
+                <img src="images/icons/instagram.svg" alt="Instagram">
+              </a>
+              <a href="#">
+                <img src="images/icons/youtube.svg" alt="YouTube">
+              </a>
+            </div>
+          </div>
+          <a href="#" class="btn rounded-0 w-100 d-flex d-lg-none">
+            <span>Order Now</span>
+          </a>
+        </div>
+        <div class="languages dropdown">
           <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
             <figure>
               <img src="images/flags/united-states.svg" alt="Bangladesh Flag">
             </figure>
-            <span class="d-none d-lg-block">English</span>
+            <span>English</span>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
             <li>
@@ -90,7 +113,7 @@
             </li>
           </ul>
         </div>
-        <div class="header_action_btns gap-3 order-4 ms-auto ms-sm-0 gap-sm-4">
+        <div class="header_action_btns gap-3 gap-sm-4">
           <a href="#" class="header_action_btn cart_btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
             <i class="ph ph-shopping-cart-simple"></i>
             <div class="badge">2</div>
@@ -98,7 +121,7 @@
           <a href="login.html" class="header_action_btn login_btn d-lg-flex d-none">
             <i class="ph ph-user"></i>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationBar">
+          <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu">
             <i class="ph-bold ph-list"></i>
           </button>
           <!-- ⚠⚠⚠⚠ IF LOGIN ⚠⚠⚠⚠-->
@@ -433,19 +456,31 @@
   =============================-->
   <footer>
     <div class="container-xl">
-      <div class="row gy-4">
+      <div class="row gy-5">
         <div class="col-lg-3 col-sm-6">
           <div class="navbar-brand">
             <img src="./images/brand/logo-dark.svg" alt="">
           </div>
-          <h5>Contact us</h5>
-          <ul class="list-unstyled footer_contact">
+                    <ul class="list-unstyled footer_contact">
             <li><i class="ph ph-map-pin-area"></i> 123 Main Street, City, Country</li>
             <li><i class="ph ph-phone"></i> +1 234 567 890</li>
             <li><i class="ph ph-envelope"></i> info@fastfood.com</li>
           </ul>
         </div>
-        <div class="col-lg-2 col-6">
+        <div class="col-lg-4 col-sm-6">
+          <h5>Products</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Burgers</a></li>
+            <li><a href="#">King Delight Products</a></li>
+            <li><a href="#">Crispy Flavors</a></li>
+            <li><a href="#">Breakfast Products</a></li>
+            <li><a href="#">Kids Menus</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Beverages</a></li>
+            <li><a href="#">Sauces</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-sm-6">
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
             <li><a href="#">Home</a></li>
@@ -454,27 +489,10 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-        <div class="col-lg-2 col-6">
-          <h5>Information</h5>
-          <ul class="list-unstyled">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Privicy Policy</a></li>
-            <li><a href="#">Terms & condition</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-sm-6 offset-lg-1">
-          <h5>Subscribe</h5>
-          <p class="subs_text">Subscribe to our newsletter to get latest updates</p>
-          <form class="subs_form">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Email address">
-              <button class="btn">
-                <i class="ph ph-envelope-simple"></i>
-                <span>subscribe</span>
-              </button>
-            </div>
-          </form>
-          <h5>Follow us</h5>
+        <div class="col-lg-3 col-sm-6">
+          <h5>opening hours</h5>
+          <p class="opening_hour">Monday – Friday: <span>8am – 4pm</span></p>
+          <p class="opening_hour">Saturday: <span>8am – 12am</span></p>
           <div class="social_icons">
             <div class="icon facebook">
               <figure>
