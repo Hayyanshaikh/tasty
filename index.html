@@ -25,107 +25,121 @@
   =            Header            =
   =============================-->
   <header>
-    <nav class="navbar py-2 navbar-expand-lg">
-      <div class="container-xl justify-content-start gap-3 gap-sm-4">
-        <div class="logo_parent">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/brand/logo-dark.svg" alt="Logo">
-          </a>
-        </div>
-        <div class="menu_offcanvas" id="menu">
-          <div class="offcanvas-header d-flex d-lg-none">
-            <a href="index.html" class="navbar-brand">
-              <img src="images/brand/logo-dark.svg" alt="">
+    <nav class="navbar py-2 py-lg-0 navbar-expand-lg">
+      <div class="container-xl">
+        <div class="header_wrapper d-flex align-items-center justify-content-start gap-3 gap-sm-4 w-100">
+          <div class="menu_offcanvas" id="menu">
+            <div class="offcanvas-header d-flex d-lg-none">
+              <a href="index.html" class="navbar-brand">
+                <img src="images/brand/logo-dark.svg" alt="">
+              </a>
+            </div>
+            <div class="offcanvas-body d-flex flex-column">
+              <div class="navbar-collapse gap-4">
+                <ul class="navbar-nav w-100 me-lg-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="offers.html">Offers</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="social_icons d-flex d-lg-none justify-content-center mt-auto">
+                <div class="icon facebook">
+                  <figure>
+                    <img src="images/icons/facebook.svg" alt="">
+                  </figure>
+                </div>
+                <div class="icon twitter">
+                  <figure>
+                    <img src="images/icons/twitter.svg" alt="">
+                  </figure>
+                </div>
+                <div class="icon instagram">
+                  <figure>
+                    <img src="images/icons/instagram.svg" alt="">
+                  </figure>
+                </div>
+                <div class="icon google_plus">
+                  <figure>
+                    <img src="images/icons/google_plus.svg" alt="">
+                  </figure>
+                </div>
+                <div class="icon linkedin">
+                  <figure>
+                    <img src="images/icons/linkedin.svg" alt="">
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn rounded-0 w-100 d-flex d-lg-none">
+              <span>Order Now</span>
             </a>
           </div>
-          <div class="offcanvas-body d-flex flex-column">
-            <div class="navbar-collapse gap-4">
-              <ul class="navbar-nav w-100 me-lg-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="offers.html">Offers</a>
-                </li>
-              </ul>
-            </div>
-            <div class="social-links d-flex d-lg-none justify-content-center mt-auto">
-              <a href="#">
-                <img src="images/icons/facebook.svg" alt="Facebook">
-              </a>
-              <a href="#">
-                <img src="images/icons/twitter.svg" alt="Twitter">
-              </a>
-              <a href="#">
-                <img src="images/icons/instagram.svg" alt="Instagram">
-              </a>
-              <a href="#">
-                <img src="images/icons/youtube.svg" alt="YouTube">
-              </a>
-            </div>
+          <div class="logo_parent">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/brand/logo-dark.svg" alt="Logo">
+            </a>
           </div>
-          <a href="#" class="btn rounded-0 w-100 d-flex d-lg-none">
-            <span>Order Now</span>
-          </a>
-        </div>
-        <div class="languages dropdown">
-          <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
-            <figure>
-              <img src="images/flags/united-states.svg" alt="Bangladesh Flag">
-            </figure>
-            <span>English</span>
-          </button>
-          <ul class="dropdown-menu dropdown-menu-end">
-            <li>
-              <a class="dropdown-item" href="#">
-                <figure>
-                  <img src="images/flags/united-states.svg" alt="United States Flag">
-                </figure>
-                <span>English</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">
-                <figure>
-                  <img src="images/flags/bangladesh.svg" alt="Bangladesh Flag">
-                </figure>
-                <span>Bengali</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">
-                <figure>
-                  <img src="images/flags/germany.svg" alt="Germany Flag">
-                </figure>
-                <span>German</span>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#">
-                <figure>
-                  <img src="images/flags/saudi-arabia.svg" alt="Saudi Arabia Flag">
-                </figure>
-                <span>Arabic</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="header_action_btns gap-3 gap-sm-4">
-          <a href="#" class="header_action_btn cart_btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
-            <i class="ph ph-shopping-cart-simple"></i>
-            <div class="badge">2</div>
-          </a>
-          <a href="login.html" class="header_action_btn login_btn d-lg-flex d-none">
-            <i class="ph ph-user"></i>
-          </a>
-          <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu">
-            <i class="ph-bold ph-list"></i>
-          </button>
-          <!-- ⚠⚠⚠⚠ IF LOGIN ⚠⚠⚠⚠-->
-          <!-- <div class="acount dropdown d-none d-lg-block">
+          <div class="languages dropdown d-none d-sm-block">
+            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              <figure>
+                <img src="images/flags/united-states.svg" alt="Bangladesh Flag">
+              </figure>
+              <span>English</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <figure>
+                    <img src="images/flags/united-states.svg" alt="United States Flag">
+                  </figure>
+                  <span>English</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <figure>
+                    <img src="images/flags/bangladesh.svg" alt="Bangladesh Flag">
+                  </figure>
+                  <span>Bengali</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <figure>
+                    <img src="images/flags/germany.svg" alt="Germany Flag">
+                  </figure>
+                  <span>German</span>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <figure>
+                    <img src="images/flags/saudi-arabia.svg" alt="Saudi Arabia Flag">
+                  </figure>
+                  <span>Arabic</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header_action_btns gap-3 ms-auto ms-sm-0">
+            <a href="#" class="header_action_btn cart_btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas">
+              <i class="ph ph-shopping-cart-simple"></i>
+              <div class="badge">2</div>
+            </a>
+            <a href="login.html" class="header_action_btn login_btn d-lg-flex d-none">
+              <i class="ph ph-user"></i>
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#menu">
+              <i class="ph-bold ph-list"></i>
+            </button>
+            <!-- ⚠⚠⚠⚠ IF LOGIN ⚠⚠⚠⚠-->
+            <!-- <div class="acount dropdown d-none d-lg-block">
             <a href="#" class="btn dropdown-toggle" data-bs-toggle="dropdown">
               <span>Account</span>
             </a>
@@ -179,6 +193,7 @@
               </li>
             </ul>
           </div> -->
+          </div>
         </div>
       </div>
     </nav>
@@ -247,22 +262,25 @@
       <div class="swiper hero_slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="container-xl">
-              <a href="#" class="hero_slide">
-                <div class="hero_content">
-                  <hgroup>
-                    <h1 class="hero_heading">crispy chicken <span>burger</span></h1>
-                    <p class="hero_pera">Our crispy chicken burger is a flavor explosion that will leave you craving more.</p>
-                  </hgroup>
-                  <button class="btn">
-                    <span>order now</span>
-                  </button>
-                </div>
-                <figure class="hero_img">
-                  <img src="images/banners/banner-1.jpg" alt="">
-                </figure>
-              </a>
-            </div>
+            <a href="#" class="hero_slide">
+              <figure class="hero_img">
+                <img src="images/banners/banner-2.jpg" alt="">
+              </figure>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="hero_slide">
+              <figure class="hero_img">
+                <img src="images/banners/banner-1.jpg" alt="">
+              </figure>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="hero_slide">
+              <figure class="hero_img">
+                <img src="images/banners/banner-3.jpg" alt="">
+              </figure>
+            </a>
           </div>
         </div>
       </div>
@@ -594,7 +612,7 @@
                 <h4 class="card-title">Crispy Chicken Burger</h4>
                 <p class="card-text">Delicious fried chicken taste</p>
                 <p class="card-text discount_price">$59,00</p>
-                <button class="btn btn-secondary">
+                <button class="btn">
                   <span>Order now</span>
                 </button>
               </div>
@@ -604,12 +622,12 @@
             </a>
           </div>
           <div class="col-lg-6">
-            <a href="#" class="discount_card card mb-4">
+            <a href="#" class="discount_card card">
               <div class="card-body">
                 <h4 class="card-title">Margherita Pizza</h4>
                 <p class="card-text">Fresh tomato and cheese</p>
                 <p class="card-text discount_price">$49,00</p>
-                <button class="btn btn-secondary">
+                <button class="btn">
                   <span>Order now</span>
                 </button>
               </div>
@@ -641,7 +659,7 @@
                 <p class="card-text webkit_box">Juicy beef patty topped with lettuce, tomato, cheese, and your choice of condiments for a satisfying meal.</p>
                 <div class="d-flex justify-content-between align-items-center align-items-sm-end gap-2 mt-auto">
                   <p class="price">$<span>9.45</span></p>
-                  <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal">
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span class="d-flex d-sm-none">Add to cart</span>
                     <i class="ph-duotone ph-shopping-cart-simple"></i>
                   </a>
@@ -659,7 +677,7 @@
                 <p class="card-text webkit_box">Crispy crust topped with fresh veggies, mozzarella cheese, and a tangy tomato sauce for a perfect bite.</p>
                 <div class="d-flex justify-content-between align-items-center align-items-sm-end gap-2 mt-auto">
                   <p class="price">$<span>12.99</span></p>
-                  <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal">
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span class="d-flex d-sm-none">Add to cart</span>
                     <i class="ph-duotone ph-shopping-cart-simple"></i>
                   </a>
@@ -677,7 +695,7 @@
                 <p class="card-text webkit_box">Grilled chicken with a spicy kick, wrapped in a soft tortilla with fresh veggies and creamy sauce.</p>
                 <div class="d-flex justify-content-between align-items-center align-items-sm-end gap-2 mt-auto">
                   <p class="price">$<span>8.75</span></p>
-                  <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal">
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span class="d-flex d-sm-none">Add to cart</span>
                     <i class="ph-duotone ph-shopping-cart-simple"></i>
                   </a>
@@ -695,7 +713,7 @@
                 <p class="card-text webkit_box">Decadent chocolate cake with layers of rich frosting and a moist, flavorful crumb.</p>
                 <div class="d-flex justify-content-between align-items-center align-items-sm-end gap-2 mt-auto">
                   <p class="price">$<span>5.50</span></p>
-                  <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal">
+                  <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal">
                     <span class="d-flex d-sm-none">Add to cart</span>
                     <i class="ph-duotone ph-shopping-cart-simple"></i>
                   </a>
@@ -781,7 +799,7 @@
               </select>
             </div>
           </div>
-          <button class="btn btn-secondary w-100">
+          <button class="btn w-100">
             <span>Add to cart ($10.0)</span>
           </button>
         </div>
@@ -799,7 +817,7 @@
           <div class="navbar-brand">
             <img src="./images/brand/logo-dark.svg" alt="">
           </div>
-                    <ul class="list-unstyled footer_contact">
+          <ul class="list-unstyled footer_contact">
             <li><i class="ph ph-map-pin-area"></i> 123 Main Street, City, Country</li>
             <li><i class="ph ph-phone"></i> +1 234 567 890</li>
             <li><i class="ph ph-envelope"></i> info@fastfood.com</li>
@@ -863,7 +881,7 @@
     </div>
     <div class="copyright text-center">
       <div class="container-xl">
-        <p>&copy; 2024 Fast Food Restaurant. All rights reserved.</p>
+        <p class="justify-content-center">&copy; 2024 Fast Food Restaurant. All rights reserved.</p>
       </div>
     </div>
   </footer>
